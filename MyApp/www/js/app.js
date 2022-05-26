@@ -12,30 +12,27 @@ function BuscaInfoGit() {
             let twitter = user.twitter
             let blog = user.blog
             let github = user.url
-            let instuicao = user.instuicao
+            let instituicao = user.instituicao
             let local = user.local
             document.getElementById("resposta").innerHTML =
                 `<div class="row">
-                    <div class="col-md-6">
-                        <img src="${avatar}" width="150"></div> 
-                    <div class="col-md-6 flex-column"> 
+                    <div class="col-md-3">
+                        <img src="${avatar}" width="150">
+                    </div> 
+                    <div class="col-md-9 "> 
                         ${nome} (${login}) <br> 
                         <a href="${twitter}">twitter</a> </br>
                         <a href="${blog}">medium-blog</a> </br>
                         <a href="${github}">github</a></br> 
-                        ${instuicao} - ${local}
+                        ${instituicao} - ${local}
                     </div>                    
-                </div>`
-             
+                </div>`             
         })
+        
     })
-
-
-
+    
 }
-
-
-
 document.getElementById('btn-buscar').addEventListener('click', function () {
-    BuscaInfoGit();
+     BuscaInfoGit();
+    
 })
