@@ -14,13 +14,13 @@ function BuscaInfoGit(){
              let local = user.local
              document.getElementById("resposta").innerHTML = 
              `<div class="col-md-5">
-             <img src="${avatar}" width="150"></div> 
+                <img src="${avatar}" width="150"></div> 
              <div class="col-md-7"> 
              ${nome} (${login}) <br> 
              <a href="${twitter}"><i class="bi bi-twitter"></i></a> 
              <a href="${blog}"><i class="bi bi-github" width="100"></i></a> 
-             <a href="${medium}"><i class="bi bi-medium"></i></a> <br> 
-             ${instuicao} - ${pais}`
+             <a href="${github}"><i class="bi bi-medium"></i></a> <br> 
+             ${instuicao} - ${local}`
         })
     })
    
