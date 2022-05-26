@@ -12,7 +12,7 @@ function BuscaInfoGit() {
             let twitter = user.twitter
             let blog = user.blog
             let github = user.url
-            let instuicao = user.
+            let instuicao = user.instuicao
             let local = user.local
             document.getElementById("resposta").innerHTML =
                 `<div class="row">
